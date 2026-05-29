@@ -1,0 +1,1394 @@
+{
+  "custom_types": {
+    "User": {
+      "type_id": "user",
+      "fields": {
+        "rg_text": {
+          "field_id": "rg_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cpf_text": {
+          "field_id": "cpf_text",
+          "type": "text",
+          "is_list": false
+        },
+        "zap_text": {
+          "field_id": "zap_text",
+          "type": "text",
+          "is_list": false
+        },
+        "txt_nome": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cargo_text": {
+          "field_id": "cargo_text",
+          "type": "text",
+          "is_list": false
+        },
+        "foto_image": {
+          "field_id": "foto_image",
+          "type": "image",
+          "is_list": false
+        },
+        "idzin_text": {
+          "field_id": "idzin_text",
+          "type": "text",
+          "is_list": false
+        },
+        "escala_text": {
+          "field_id": "escala_text",
+          "type": "text",
+          "is_list": false
+        },
+        "profiss_o_text": {
+          "field_id": "profiss_o_text",
+          "type": "text",
+          "is_list": false
+        },
+        "sobrenome_text": {
+          "field_id": "sobrenome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "admin_coop_boolean": {
+          "field_id": "admin_coop_boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "minha_cooperativa": {
+          "field_id": "minha_cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "primeiro_acesso_boolean": {
+          "field_id": "primeiro_acesso_boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "colaborador_interno_boolean": {
+          "field_id": "colaborador_interno_boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "telefone_principal__whats__text": {
+          "field_id": "telefone_principal__whats__text",
+          "type": "text",
+          "is_list": false
+        },
+        "socio_cooperado": {
+          "field_id": "socio_cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "permiss_es_list": {
+          "field_id": "permiss_es_list_option_permissoes_modulos",
+          "type": "option_set.permissoes_modulos",
+          "is_list": true
+        },
+        "meus_times": {
+          "field_id": "meus_times_list_custom_times_internos",
+          "type": "custom.times_internos",
+          "is_list": true
+        }
+      }
+    },
+    "Salas": {
+      "type_id": "salas",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Teste": {
+      "type_id": "teste",
+      "fields": {
+        "f_custom_cooperativas": {
+          "field_id": "f_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Bancos": {
+      "type_id": "bancos",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "logo_image": {
+          "field_id": "logo_image",
+          "type": "image",
+          "is_list": false
+        },
+        "codigo_text": {
+          "field_id": "codigo_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Preços": {
+      "type_id": "pre_os",
+      "fields": {
+        "valor_number": {
+          "field_id": "valor_number",
+          "type": "number",
+          "is_list": false
+        }
+      }
+    },
+    "Escalas": {
+      "type_id": "escalas",
+      "fields": {
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "local_text": {
+          "field_id": "local_text",
+          "type": "text",
+          "is_list": false
+        },
+        "status_text": {
+          "field_id": "status_text",
+          "type": "text",
+          "is_list": false
+        },
+        "setor_custom_setores": {
+          "field_id": "setor_custom_setores",
+          "type": "custom.setores",
+          "is_list": false
+        },
+        "usuario_user": {
+          "field_id": "usuario_user",
+          "type": "user",
+          "is_list": false
+        },
+        "status_os_option_status_de_escala": {
+          "field_id": "status_os_option_status_de_escala",
+          "type": "option_set.status_de_escala",
+          "is_list": false
+        }
+      }
+    },
+    "Meu RPA": {
+      "type_id": "meu_rpa",
+      "fields": {
+        "valor_number": {
+          "field_id": "valor_number",
+          "type": "number",
+          "is_list": false
+        },
+        "mes_text": {
+          "field_id": "mes_text",
+          "type": "text",
+          "is_list": false
+        },
+        "ano_text": {
+          "field_id": "ano_text",
+          "type": "text",
+          "is_list": false
+        },
+        "socio_user": {
+          "field_id": "socio_user",
+          "type": "user",
+          "is_list": false
+        },
+        "url_doc_text": {
+          "field_id": "url_doc_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Setores": {
+      "type_id": "setores",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "unidade_text": {
+          "field_id": "unidade_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Tarefas": {
+      "type_id": "tarefas",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "status_boolean": {
+          "field_id": "status_boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Votação": {
+      "type_id": "vota__o",
+      "fields": {
+        "pauta_custom_pautas_de_reuni_o": {
+          "field_id": "pauta_custom_pautas_de_reuni_o",
+          "type": "custom.pautas_de_reuni_o",
+          "is_list": false
+        },
+        "valor_text": {
+          "field_id": "valor_text",
+          "type": "text",
+          "is_list": false
+        },
+        "socio_custom_cooperados": {
+          "field_id": "socio_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "voto_number": {
+          "field_id": "voto_number",
+          "type": "number",
+          "is_list": false
+        },
+        "quem_votou_user": {
+          "field_id": "quem_votou_user",
+          "type": "user",
+          "is_list": false
+        },
+        "assembleia_custom_assembleias": {
+          "field_id": "assembleia_custom_assembleias",
+          "type": "custom.assembleias",
+          "is_list": false
+        },
+        "hash_voto_text": {
+          "field_id": "hash_voto_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Chamadas": {
+      "type_id": "chamadas",
+      "fields": {
+        "n__number": {
+          "field_id": "n__number",
+          "type": "number",
+          "is_list": false
+        },
+        "lista_de_cooperados": {
+          "field_id": "lista_de_cooperados_list_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": true
+        },
+        "log_presen_a": {
+          "field_id": "log_presen_a_list_custom_historico",
+          "type": "custom.historico",
+          "is_list": true
+        }
+      }
+    },
+    "Empresas": {
+      "type_id": "empresas",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Objetivos": {
+      "type_id": "objetivos",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "meta_number": {
+          "field_id": "meta_number",
+          "type": "number",
+          "is_list": false
+        },
+        "valor_atual_number": {
+          "field_id": "valor_atual_number",
+          "type": "number",
+          "is_list": false
+        }
+      }
+    },
+    "Conversas": {
+      "type_id": "conversas",
+      "fields": {
+        "usuarios_list_user": {
+          "field_id": "usuarios_list_user",
+          "type": "user",
+          "is_list": true
+        },
+        "mensagens_list_custom_mensagens": {
+          "field_id": "mensagens_list_custom_mensagens",
+          "type": "custom.mensagens",
+          "is_list": true
+        }
+      }
+    },
+    "Historico": {
+      "type_id": "historico",
+      "fields": {
+        "acao_text": {
+          "field_id": "acao_text",
+          "type": "text",
+          "is_list": false
+        },
+        "usuario_user": {
+          "field_id": "usuario_user",
+          "type": "user",
+          "is_list": false
+        },
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        }
+      }
+    },
+    "Mensagens": {
+      "type_id": "mensagens",
+      "fields": {
+        "texto_text": {
+          "field_id": "texto_text",
+          "type": "text",
+          "is_list": false
+        },
+        "remetente_user": {
+          "field_id": "remetente_user",
+          "type": "user",
+          "is_list": false
+        }
+      }
+    },
+    "Cooperados": {
+      "type_id": "cooperados",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "data_de_nascimento_date": {
+          "field_id": "data_de_nascimento_date",
+          "type": "date",
+          "is_list": false
+        },
+        "foto_image": {
+          "field_id": "foto_image",
+          "type": "image",
+          "is_list": false
+        },
+        "zap_text": {
+          "field_id": "zap_text",
+          "type": "text",
+          "is_list": false
+        },
+        "rg_text": {
+          "field_id": "rg_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cpf_text": {
+          "field_id": "cpf_text",
+          "type": "text",
+          "is_list": false
+        },
+        "email_text": {
+          "field_id": "email_text",
+          "type": "text",
+          "is_list": false
+        },
+        "sexo_option_sexo": {
+          "field_id": "sexo_option_sexo",
+          "type": "option_set.sexo",
+          "is_list": false
+        },
+        "org_o_emissor_text": {
+          "field_id": "org_o_emissor_text",
+          "type": "text",
+          "is_list": false
+        },
+        "profiss_o_option_profiss_es": {
+          "field_id": "profiss_o_option_profiss_es",
+          "type": "option_set.profiss_es",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "e_serviços": {
+      "type_id": "e_servi_os",
+      "fields": {
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "valor_number": {
+          "field_id": "valor_number",
+          "type": "number",
+          "is_list": false
+        },
+        "unidade_text": {
+          "field_id": "unidade_text",
+          "type": "text",
+          "is_list": false
+        },
+        "usuario_user": {
+          "field_id": "usuario_user",
+          "type": "user",
+          "is_list": false
+        },
+        "mes_option_meses": {
+          "field_id": "mes_option_meses",
+          "type": "option_set.meses",
+          "is_list": false
+        },
+        "valor_bruto_number": {
+          "field_id": "valor_bruto_number",
+          "type": "number",
+          "is_list": false
+        },
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Fechamento": {
+      "type_id": "fechamento",
+      "fields": {
+        "mes_option_meses": {
+          "field_id": "mes_option_meses",
+          "type": "option_set.meses",
+          "is_list": false
+        },
+        "ano_text": {
+          "field_id": "ano_text",
+          "type": "text",
+          "is_list": false
+        },
+        "valor_total_number": {
+          "field_id": "valor_total_number",
+          "type": "number",
+          "is_list": false
+        },
+        "socio_user": {
+          "field_id": "socio_user",
+          "type": "user",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Assembleias": {
+      "type_id": "assembleias",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "data_de_inicio_date": {
+          "field_id": "data_de_inicio_date",
+          "type": "date",
+          "is_list": false
+        },
+        "tipo": {
+          "field_id": "tipo_option_tipo_de_assembleia",
+          "type": "option_set.tipo_de_assembleia",
+          "is_list": false
+        },
+        "iniciou__boolean": {
+          "field_id": "iniciou__boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "finalizou__boolean": {
+          "field_id": "finalizou__boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "pautas": {
+          "field_id": "pautas_list_custom_pautas_de_reuni_o",
+          "type": "custom.pautas_de_reuni_o",
+          "is_list": true
+        },
+        "chamadas": {
+          "field_id": "chamadas_list_custom_chamadas",
+          "type": "custom.chamadas",
+          "is_list": true
+        },
+        "quorum": {
+          "field_id": "quorum_custom_chamadas",
+          "type": "custom.chamadas",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "hash_da_reuniao_text": {
+          "field_id": "hash_da_reuniao_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "logs_gerais": {
+      "type_id": "logs_gerais",
+      "fields": {
+        "modulo_option_logs": {
+          "field_id": "modulo_option_logs",
+          "type": "option_set.logs",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "usuario_user": {
+          "field_id": "usuario_user",
+          "type": "user",
+          "is_list": false
+        },
+        "log_text": {
+          "field_id": "log_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "tokens_user": {
+      "type_id": "tokens_user",
+      "fields": {
+        "usuario_user": {
+          "field_id": "usuario_user",
+          "type": "user",
+          "is_list": false
+        },
+        "token_text": {
+          "field_id": "token_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Contratantes": {
+      "type_id": "contratantes",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cnpj_text": {
+          "field_id": "cnpj_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Cooperativas": {
+      "type_id": "cooperativas",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "logo_image": {
+          "field_id": "logo_image",
+          "type": "image",
+          "is_list": false
+        },
+        "cnpj_text": {
+          "field_id": "cnpj_text",
+          "type": "text",
+          "is_list": false
+        },
+        "slug_text": {
+          "field_id": "slug_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cor_hex_text": {
+          "field_id": "cor_hex_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Escalas dias": {
+      "type_id": "escalas_dias",
+      "fields": {
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "unidade_text": {
+          "field_id": "unidade_text",
+          "type": "text",
+          "is_list": false
+        },
+        "vagas_number": {
+          "field_id": "vagas_number",
+          "type": "number",
+          "is_list": false
+        },
+        "vagas_preenchidas_number": {
+          "field_id": "vagas_preenchidas_number",
+          "type": "number",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Fluxo de Caixa": {
+      "type_id": "fluxo_de_caixa",
+      "fields": {
+        "valor_number": {
+          "field_id": "valor_number",
+          "type": "number",
+          "is_list": false
+        },
+        "descri__o_text": {
+          "field_id": "descri__o_text",
+          "type": "text",
+          "is_list": false
+        },
+        "tipo_option_tipo_de_entrada": {
+          "field_id": "tipo_option_tipo_de_entrada",
+          "type": "option_set.tipo_de_entrada",
+          "is_list": false
+        },
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Integralização": {
+      "type_id": "integraliza__o",
+      "fields": {
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "valor_total_number": {
+          "field_id": "valor_total_number",
+          "type": "number",
+          "is_list": false
+        },
+        "qtd_de_parcelas_option_qtd__de_parcelas": {
+          "field_id": "qtd_de_parcelas_option_qtd__de_parcelas",
+          "type": "option_set.qtd__de_parcelas",
+          "is_list": false
+        },
+        "status_option_status_de_integraliza__o": {
+          "field_id": "status_option_status_de_integraliza__o",
+          "type": "option_set.status_de_integraliza__o",
+          "is_list": false
+        },
+        "parcelas": {
+          "field_id": "parcelas_list_custom_integraliza__o_parcelas",
+          "type": "custom.integraliza__o_parcelas",
+          "is_list": true
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Times Internos": {
+      "type_id": "times_internos",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "permissoes_list": {
+          "field_id": "permissoes_list_option_permissoes_modulos",
+          "type": "option_set.permissoes_modulos",
+          "is_list": true
+        }
+      }
+    },
+    "Dias Trabalhados": {
+      "type_id": "dias_trabalhados",
+      "fields": {
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "unidade_text": {
+          "field_id": "unidade_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "valor_diaria_number": {
+          "field_id": "valor_diaria_number",
+          "type": "number",
+          "is_list": false
+        },
+        "mes_option_meses": {
+          "field_id": "mes_option_meses",
+          "type": "option_set.meses",
+          "is_list": false
+        },
+        "ano_text": {
+          "field_id": "ano_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Pautas de Reunião": {
+      "type_id": "pautas_de_reuni_o",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "modo_da_pauta": {
+          "field_id": "modo_da_pauta_option_modo_da_pauta",
+          "type": "option_set.modo_da_pauta",
+          "is_list": false
+        },
+        "liberada__boolean": {
+          "field_id": "liberada__boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "finalizada_boolean": {
+          "field_id": "finalizada_boolean",
+          "type": "boolean",
+          "is_list": false
+        }
+      }
+    },
+    "w_Contas Bancarias": {
+      "type_id": "w_contas_bancarias",
+      "fields": {
+        "banco_custom_bancos": {
+          "field_id": "banco_custom_bancos",
+          "type": "custom.bancos",
+          "is_list": false
+        },
+        "agencia_text": {
+          "field_id": "agencia_text",
+          "type": "text",
+          "is_list": false
+        },
+        "conta_text": {
+          "field_id": "conta_text",
+          "type": "text",
+          "is_list": false
+        },
+        "pix_text": {
+          "field_id": "pix_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "MetricasFinanceiras": {
+      "type_id": "metricasfinanceiras",
+      "fields": {
+        "faturamento_bruto_number": {
+          "field_id": "faturamento_bruto_number",
+          "type": "number",
+          "is_list": false
+        },
+        "custos_fixos_number": {
+          "field_id": "custos_fixos_number",
+          "type": "number",
+          "is_list": false
+        },
+        "mes_option_meses": {
+          "field_id": "mes_option_meses",
+          "type": "option_set.meses",
+          "is_list": false
+        },
+        "ano_text": {
+          "field_id": "ano_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Perguntas Assembleia": {
+      "type_id": "perguntas_assembleia",
+      "fields": {
+        "pergunta_text": {
+          "field_id": "pergunta_text",
+          "type": "text",
+          "is_list": false
+        },
+        "alternativas": {
+          "field_id": "alternativas_list_custom_alternativas_assembleias",
+          "type": "custom.alternativas_assembleias",
+          "is_list": true
+        },
+        "pauta_custom_pautas_de_reuni_o": {
+          "field_id": "pauta_custom_pautas_de_reuni_o",
+          "type": "custom.pautas_de_reuni_o",
+          "is_list": false
+        }
+      }
+    },
+    "Cadastro de Cooperados": {
+      "type_id": "cadastro_de_cooperados",
+      "fields": {
+        "nome_completo_text": {
+          "field_id": "nome_completo_text",
+          "type": "text",
+          "is_list": false
+        },
+        "email_text": {
+          "field_id": "email_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cpf_text": {
+          "field_id": "cpf_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "status_text": {
+          "field_id": "status_text",
+          "type": "text",
+          "is_list": false
+        }
+      }
+    },
+    "Colaboradores Internos": {
+      "type_id": "colaboradores_internos",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "email_text": {
+          "field_id": "email_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cargo_text": {
+          "field_id": "cargo_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Integralização Parcelas": {
+      "type_id": "integraliza__o_parcelas",
+      "fields": {
+        "n__da_parcela_number": {
+          "field_id": "n__da_parcela_number",
+          "type": "number",
+          "is_list": false
+        },
+        "valor_number": {
+          "field_id": "valor_number",
+          "type": "number",
+          "is_list": false
+        },
+        "data_de_vencimento_date": {
+          "field_id": "data_de_vencimento_date",
+          "type": "date",
+          "is_list": false
+        },
+        "paga__boolean": {
+          "field_id": "paga__boolean",
+          "type": "boolean",
+          "is_list": false
+        },
+        "data_de_pagamento_date": {
+          "field_id": "data_de_pagamento_date",
+          "type": "date",
+          "is_list": false
+        }
+      }
+    },
+    "Presença na Cooperativa": {
+      "type_id": "presen_a_na_cooperativa",
+      "fields": {
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        },
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Alternativas Assembleias": {
+      "type_id": "alternativas_assembleias",
+      "fields": {
+        "texto_text": {
+          "field_id": "texto_text",
+          "type": "text",
+          "is_list": false
+        },
+        "foto_image": {
+          "field_id": "foto_image",
+          "type": "image",
+          "is_list": false
+        }
+      }
+    },
+    "Não Conformidade Interna": {
+      "type_id": "n_o_conformidade_interna",
+      "fields": {
+        "titulo_text": {
+          "field_id": "titulo_text",
+          "type": "text",
+          "is_list": false
+        },
+        "descri__o_text": {
+          "field_id": "descri__o_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        },
+        "data_date": {
+          "field_id": "data_date",
+          "type": "date",
+          "is_list": false
+        }
+      }
+    },
+    "financeiro_informe_redimento": {
+      "type_id": "financeiro_informe_redimento",
+      "fields": {
+        "socio_user": {
+          "field_id": "socio_user",
+          "type": "user",
+          "is_list": false
+        },
+        "ano_text": {
+          "field_id": "ano_text",
+          "type": "text",
+          "is_list": false
+        },
+        "url_documento_text": {
+          "field_id": "url_documento_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "x_Profissões Sócios Cooperados": {
+      "type_id": "x_profiss_es_socios_cooperados",
+      "fields": {
+        "nome_text": {
+          "field_id": "nome_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "x_ Contas Bancarias Cooperativa": {
+      "type_id": "x__contas_bancarias_cooperativa",
+      "fields": {
+        "banco_custom_bancos": {
+          "field_id": "banco_custom_bancos",
+          "type": "custom.bancos",
+          "is_list": false
+        },
+        "agencia_text": {
+          "field_id": "agencia_text",
+          "type": "text",
+          "is_list": false
+        },
+        "conta_text": {
+          "field_id": "conta_text",
+          "type": "text",
+          "is_list": false
+        },
+        "pix_text": {
+          "field_id": "pix_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperativa_custom_cooperativas": {
+          "field_id": "cooperativa_custom_cooperativas",
+          "type": "custom.cooperativas",
+          "is_list": false
+        }
+      }
+    },
+    "Contas Bancarias Sócios Cooperados": {
+      "type_id": "contas_bancarias_socios_cooperados",
+      "fields": {
+        "banco_custom_bancos": {
+          "field_id": "banco_custom_bancos",
+          "type": "custom.bancos",
+          "is_list": false
+        },
+        "agencia_text": {
+          "field_id": "agencia_text",
+          "type": "text",
+          "is_list": false
+        },
+        "conta_text": {
+          "field_id": "conta_text",
+          "type": "text",
+          "is_list": false
+        },
+        "pix_text": {
+          "field_id": "pix_text",
+          "type": "text",
+          "is_list": false
+        },
+        "cooperado_custom_cooperados": {
+          "field_id": "cooperado_custom_cooperados",
+          "type": "custom.cooperados",
+          "is_list": false
+        }
+      }
+    }
+  },
+  "option_sets": {
+    "Logs os": {
+      "os_id": "logs",
+      "values": {
+        "log_rh": "Log Rh",
+        "log_vota__o": "Log Votação",
+        "log_financeiro": "log financeiro",
+        "log_gest_o_geral": "Log Gestão Geral",
+        "log_dashboard_ofc": "Log dashboard_ofc",
+        "log_gest_o_escalas": "Log Gestão escalas",
+        "log_ciar_cooperativa": "Log ciar cooperativa"
+      }
+    },
+    "Sexo": {
+      "os_id": "sexo",
+      "values": {
+        "masculino": "Masculino",
+        "feminino": "Feminino",
+        "prefiro_n_o_dizer": "Prefiro não dizer"
+      }
+    },
+    "Meses": {
+      "os_id": "meses",
+      "values": {
+        "maio": "Maio",
+        "abril": "Abril",
+        "mar_o": "Março",
+        "junho": "Junho",
+        "julho": "Julho",
+        "agosto": "Agosto",
+        "janeiro": "Janeiro",
+        "outubro": "Outubro",
+        "setembro": "Setembro",
+        "novembro": "Novembro",
+        "dezembro": "Dezembro",
+        "fevereiro": "Fevereiro"
+      }
+    },
+    "Turno": {
+      "os_id": "turno",
+      "values": {
+        "noite": "Noite",
+        "tarde": "Tarde",
+        "manha": "Manha"
+      }
+    },
+    "Votação": {
+      "os_id": "vota__o",
+      "values": {
+        "absten__o": "Abstenção",
+        "voto_n_o": "Voto NÃO",
+        "voto_sim": "Voto SIM"
+      }
+    },
+    "Metricas": {
+      "os_id": "metricas",
+      "values": {
+        "geral": "Geral",
+        "unidade": "Unidade",
+        "cooperativa": "Cooperativa"
+      }
+    },
+    "Tipo item": {
+      "os_id": "tipo_item",
+      "values": {
+        "insumo": "Insumo",
+        "materiais": "Materiais",
+        "honor_rios": "Honorários",
+        "medicamentos": "Medicamentos",
+        "dietas": "Dietas"
+      }
+    },
+    "profissões": {
+      "os_id": "profiss_es",
+      "values": {
+        "m_dico": "Médico",
+        "biomedico": "Biomedico",
+        "enfermeiro": "Enfermeiro",
+        "fisioterapeuta": "Fisioterapeuta",
+        "fonoaudiologo": "Fonoaudiologo",
+        "nutricionista": "Nutricionista",
+        "odontologo": "Odontologo",
+        "psicologo": "Psicologo",
+        "veterinario": "Veterinario"
+      }
+    },
+    "Tabela IRRF": {
+      "os_id": "tabela_irrf",
+      "values": {
+        "isento": "Isento",
+        "aliquota_1": "7,5%",
+        "aliquota_2": "15,0%",
+        "aliquota_3": "22,5%",
+        "aliquota_4": "27,5%"
+      }
+    },
+    "modo_da_pauta": {
+      "os_id": "modo_da_pauta",
+      "values": {
+        "elei__o": "Eleição",
+        "proposta": "Proposta"
+      }
+    },
+    "status escala": {
+      "os_id": "status_escala",
+      "values": {
+        "vago": "Vago",
+        "plantonista": "Plantonista"
+      }
+    },
+    "dias da semana": {
+      "os_id": "dias_da_semana",
+      "values": {
+        "ter_a": "Terça",
+        "quarta": "Quarta",
+        "quinta": "Quinta",
+        "sexta": "Sexta",
+        "sabado": "Sabado",
+        "domingo": "Domingo",
+        "segunda": "Segunda"
+      }
+    },
+    "status serviço": {
+      "os_id": "status_servi_o",
+      "values": {
+        "aberto": "Aberto",
+        "cancelado": "Cancelado",
+        "finalizado": "Finalizado"
+      }
+    },
+    "valor por user": {
+      "os_id": "valor_por_user",
+      "values": {
+        "fixo": "Fixo",
+        "variavel": "Variavel"
+      }
+    },
+    "modo de criação": {
+      "os_id": "modo_de_cria__o",
+      "values": {
+        "manual": "Manual",
+        "automatico": "Automatico"
+      }
+    },
+    "tipo de entrada": {
+      "os_id": "tipo_de_entrada",
+      "values": {
+        "saida": "Saída",
+        "entrada": "Entrada"
+      }
+    },
+    "tipo de serviço": {
+      "os_id": "tipo_de_servi_o",
+      "values": {
+        "exame": "Exame",
+        "cirurgia": "Cirurgia",
+        "consulta": "Consulta"
+      }
+    },
+    "tipo de votação": {
+      "os_id": "tipo_de_vota__o",
+      "values": {
+        "elei__o": "Eleição",
+        "assembleia": "Assembleia"
+      }
+    },
+    "qtd  de parcelas": {
+      "os_id": "qtd__de_parcelas",
+      "values": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "24": "24",
+        "36": "36",
+        "48": "48"
+      }
+    },
+    "status de escala": {
+      "os_id": "status_de_escala",
+      "values": {
+        "vago": "Vago",
+        "preenchida": "Preenchida",
+        "aguardando_aprovacao": "Aguardando Aprovação"
+      }
+    },
+    "permissoes_modulos": {
+      "os_id": "permissoes_modulos",
+      "values": {
+        "dashboard": "Dashboard",
+        "financeiro": "Financeiro",
+        "assembleias": "Assembleias",
+        "gest_o_de_rh": "Gestão de RH",
+        "gest_o_geral": "Gestão Geral",
+        "gest_o_de_escalas": "Gestão de Escalas",
+        "educa__o_continuada": "Educação Continuada"
+      }
+    },
+    "tipo de assembleia": {
+      "os_id": "tipo_de_assembleia",
+      "values": {
+        "age_oficial": "AGE Oficial",
+        "ago_oficial": "AGO Oficial",
+        "assembleia_teste": "Assembleia Teste",
+        "ago_e_age_oficiais": "AGO e AGE Oficiais",
+        "age__especial__oficial": "AGE (Especial) Oficial"
+      }
+    },
+    "Status de Integralização": {
+      "os_id": "status_de_integraliza__o",
+      "values": {
+        "paga": "Paga",
+        "pendente": "Pendente",
+        "atrasada": "Atrasada"
+      }
+    }
+  }
+}
